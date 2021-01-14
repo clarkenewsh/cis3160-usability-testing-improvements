@@ -1,61 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Recommendation 1</title>
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Recommendation 1 - CTA Usability</title>
 </head>
+
 <body>
     <header>
         <a href="#main" class="skip-link">Skip to main content</a>
-        <nav class="wrapper">
-            <a href=""><img src="total-swimming-logo.png" alt="Total Swimming logo"></a>
-            <a href="">Getting started</a>
-            <a href="">Taster Sessions</a>
-            <a href="">Intros</a>
-            <a href="">Help & Support</a>
-            <a href="">Pool Solutions</a>
-            <a href="">About</a>
-            <a href="">Help & Support</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+            <a class="navbar-brand" href="#"><img src="total-swimming-logo.png" alt="Total Swimming logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Getting Started
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Locations and Venues</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Ability Matrix</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Events</a>
+                        </div>
+                    </li>
+                    <a class="nav-link" href="#">Taster Session</a>
+                    <a class="nav-link" href="#">Intros</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help and Support
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">FAQs</a>
+                        </div>
+                    </li>
+                    <a class="nav-link" href="#">Pool Solutions</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Produts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Profiles</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">News</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Partners</a>
+                        </div>
+                    </li>
+                    <button type="button" class="btn btn-primary floar-right">Find a class</button>
+                    <button type="button" class="btn btn-primary floar-right">Login</button>
+                </div>
+            </div>
         </nav>
-        <form action="" method="get" class="form-example">
-            <div class="form-example">
-              <label for="name">Enter your name: </label>
-              <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-example">
-              <label for="email">Enter your email: </label>
-              <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-example">
-              <input type="submit" value="Subscribe!">
-            </div>
-          </form>
-          
-    </header> 
-
-    
-    <main id="main">
-        <div class="main-cta">
-            <form action="">
-                <input type="text">
+        <div class="jumbotron">
+            <form>
+                <h1>Find a wimming class near you</h1>
+                <p>
+                    We are opening venues as safely and as quickly as possible. For new bookings, not all venues will
+                    open at the same time so please keep checking back as they become available.</p>
+                <div class="row">
+                    <select class="col form-control form-control-md" placeholder="Select Area">
+                        <option>Lacashire</option>
+                        <option>Merseyside</option>
+                        <option>Yorskshire</option>
+                    </select>
+                    <div class="col text-center">
+                        <p class="text-center">Ability</p>
+                        <input type="range" min="1" max="100" value="50">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </div>
             </form>
         </div>
-        <figure>
-            <img src="landing-page-video.jpg" alt="">
-            <img src="" alt="">
-        </figure>
-        <figure>
-            <img src="" alt="">
-            <img src="" alt="">
-        </figure>
-        
+    </header>
+    <!-- end header -->
+
+
+
+
+
+    <main id="main">
 
 
     </main>
-    
+    <footer>
+
+    </footer>
+
+    <!-- Bootrap CDN link -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>

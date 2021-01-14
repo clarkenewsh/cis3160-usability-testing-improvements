@@ -1,0 +1,293 @@
+/* UNIVERSAL STYLES */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.primary-colour {
+    color: #3bbac9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "proxima-nova", sans-serif !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Accessbility skip link styles */
+/* shows skip link button when tab is pressed - first DOM Element*/
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+
+.skip-link:focus {
+    top: 0;
+}
+
+.btn.btn-primary {
+    background-color: #3bbac9;
+    border: #3bbac9;
+    margin: 5px;
+}
+
+hr {
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: uppercase;
+}
+
+
+
+/* CSS Grid LAYOUT STYLES - MOBILE FIRST LAYOUT */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.left-column {
+    grid-column: 1/2;
+}
+
+.right-column {
+    grid-column: 2/-1;
+}
+
+@media only screen and (max-width: 740px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column {
+        grid-column: 1/-1;
+    }
+
+    .right-column {
+        grid-column: 1/-1;
+    }
+}
+
+/* NAV STYLES  */
+
+.jumbotron {
+    background: url('../assets/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-toggler {
+    border: 2px solid #3bbac9 !important;
+    color: #3bbac9;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: #3bbac9;
+
+}
+
+.navbar {
+    background: #ececec;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav img {
+    height: 60px;
+    max-width: 100%;
+
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+
+
+form {
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 120px;
+    padding: 40px;
+    margin: 0 auto;
+    color: white;
+    max-width: 900px;
+}
+
+form p {
+    font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+}
+
+form p:last-child {
+    padding-bottom: 0;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+#slider p {
+    padding: 0;
+    font-size: 80%;
+}
+
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form .ability {
+    display: flex;
+    justify-content: space-between;
+}
+
+#learn-to-swim {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/cta-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+    text-align: center;
+}
+
+
+#intro-video {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/landing-page-video.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a svg {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+
+#promo {
+    display: flex;
+
+}
+
+#promo img {
+    padding-right: 10px;
+    max-width: 100%;
+    height: 200px;
+}
+
+#updates>* {
+    padding-bottom: 10px;
+}
+
+#updates figure {
+    display: flex;
+}
+
+#updates a {
+    font-weight: 500;
+}
+
+#updates button {
+    margin: 0 auto;
+}
+
+#updates img {
+    height: 60px;
+    width: 100px;
+    max-width: 100%;
+    padding-right: 15px;
+}
+
+#payment {
+    background: url('../assets/direct-debit-img.jpg');
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+footer {
+    background: #2a2b2b;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+footer svg {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+footer section {
+    margin: 30px;
+}
+
+footer section li {
+    padding: 10px;
+    list-style: none;
+}
+
+footer section a {
+    color: white;
+}

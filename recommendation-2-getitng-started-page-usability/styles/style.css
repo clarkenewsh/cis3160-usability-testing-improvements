@@ -156,8 +156,10 @@ form .ability {
 #getting-started p {
     color: #3bbac9;
     font-weight: 700;
+    width: 70%;
 }
 
 #side-nav {
     border-left: 2px solid #3bbac9;
 }
+
